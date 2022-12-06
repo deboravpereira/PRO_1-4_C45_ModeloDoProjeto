@@ -14,7 +14,9 @@ class Game{
         database.ref('/').update({
             gameState: state
         });
+        console.log("ok");
     }
+
     async start() {
             if (gameState === 0) {
                 player = new Player();
